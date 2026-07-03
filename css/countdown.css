@@ -1,0 +1,13 @@
+#countdown{overflow:hidden;background:var(--gradient-dark)}
+#countdown::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 10%,rgba(212,0,31,.16),transparent 38%);pointer-events:none}
+.countdown-content{position:relative;z-index:2}
+.countdown-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(.75rem,2vw,1.5rem);width:min(100%,960px);margin:0 auto}
+.countdown-card{min-height:190px;display:grid;place-items:center;text-align:center;padding:clamp(1.25rem,3vw,2rem);border:1px solid rgba(255,255,255,.09);border-radius:var(--border-radius-lg);background:linear-gradient(145deg,rgba(255,255,255,.08),rgba(255,255,255,.025));backdrop-filter:blur(var(--glass-blur));box-shadow:inset 0 1px 0 rgba(255,255,255,.06),0 22px 55px rgba(0,0,0,.32)}
+.countdown-number{display:block;font-family:var(--font-display);font-size:clamp(2.8rem,7vw,5.5rem);font-weight:var(--fw-bold);line-height:1;font-variant-numeric:tabular-nums;transition:transform .16s ease,opacity .16s ease,filter .16s ease}
+.countdown-number.tick{transform:translateY(-8px) scale(.97);opacity:.3;filter:blur(3px)}
+.countdown-label{display:block;margin-top:var(--space-3);color:var(--text-muted);font-size:.7rem;letter-spacing:.24em}
+.countdown-race-strip{width:min(100%,960px);height:5px;margin:var(--space-6) auto 0;overflow:hidden;border-radius:var(--border-radius-full);background:rgba(255,255,255,.05)}
+.countdown-race-strip span{display:block;width:58%;height:100%;border-radius:inherit;background:linear-gradient(90deg,var(--color-ferrari-dark),var(--color-ferrari),var(--color-gold));animation:countdownStrip 4s ease-in-out infinite alternate}
+.countdown-date{width:fit-content;margin:var(--space-6) auto 0;padding:.85rem 1.15rem;border:1px solid rgba(255,255,255,.08);border-radius:var(--border-radius-full);background:rgba(255,255,255,.035);font-family:var(--font-display);font-size:var(--fs-xs);letter-spacing:.14em;text-transform:uppercase}
+@keyframes countdownStrip{from{width:28%}to{width:88%}}
+.race-mode{width:min(100%,820px);margin:auto;padding:clamp(2rem,6vw,4rem);text-align:center;border:1px solid rgba(201,162,39,.26);border-radius:var(--border-radius-xl);background:linear-gradient(145deg,rgba(212,0,31,.1),rgba(255,255,255,.025))}

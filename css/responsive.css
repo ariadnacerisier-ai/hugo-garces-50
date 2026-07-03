@@ -1,0 +1,33 @@
+@media(max-width:1024px){
+  section{padding:var(--space-8) var(--space-5)}
+  .event-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .event-card:last-child{grid-column:1/-1}
+  .menu-card:nth-child(1),.menu-card:nth-child(2),.menu-card:nth-child(n+3){grid-column:span 6}
+}
+@media(max-width:768px){
+  section{min-height:auto;padding:var(--space-8) var(--space-4)}
+  #hero{min-height:100svh}
+  .hero-actions{width:100%;flex-direction:column}
+  .btn{width:100%;min-height:52px}
+  .countdown-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .countdown-card{min-height:145px}
+  .event-grid,.snacks-grid,.form-grid,.menu-grid{grid-template-columns:1fr}
+  .event-card:last-child,.form-group--full,.form-submit,.menu-card:nth-child(1),.menu-card:nth-child(2),.menu-card:nth-child(n+3){grid-column:auto}
+  .timeline-circuit{padding-left:38px}
+  .timeline-track,.timeline-progress{left:15px;transform:none}
+  .timeline-item{display:block;min-height:auto;padding-left:24px}
+  .timeline-node{position:absolute;top:50%;left:-36px;transform:translateY(-50%)}
+  .timeline-item:nth-child(odd) .timeline-card,.timeline-item:nth-child(even) .timeline-card{width:100%;text-align:left;justify-self:auto}
+  .timeline-car{left:20px;width:50px}
+  .timeline-start,.timeline-finish{left:40px}
+  .speedometer{right:14px;bottom:14px;width:72px}
+}
+@media(max-width:480px){
+  .container{padding-inline:0}
+  .hero-title{font-size:clamp(3.4rem,18vw,5rem)}
+  .hero-subtitle{letter-spacing:.18em}
+  .countdown-card{min-height:128px;padding:var(--space-4)}
+  .speedometer{width:62px;opacity:.85}
+  .speedometer-unit{display:none}
+}
+@media(hover:none){.card:hover,.btn:hover{transform:none}}

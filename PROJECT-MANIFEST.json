@@ -1,0 +1,84 @@
+{
+  "project": "hugo-garces-50",
+  "files": [
+    ".gitignore",
+    "LICENSE",
+    "README.md",
+    "assets/icons/favicon.svg",
+    "assets/images/hero-bg.jpg",
+    "assets/images/menu-adultos.jpg",
+    "assets/images/menu-ninos.jpg",
+    "assets/images/og-image.jpg",
+    "assets/svg/car.svg",
+    "assets/svg/checkered.svg",
+    "assets/svg/circuit.svg",
+    "assets/svg/monogram-hg.svg",
+    "assets/textures/carbon.svg",
+    "assets/video/README.md",
+    "css/animations.css",
+    "css/cards.css",
+    "css/countdown.css",
+    "css/hero.css",
+    "css/layout.css",
+    "css/reset.css",
+    "css/responsive.css",
+    "css/style.css",
+    "css/timeline.css",
+    "css/typography.css",
+    "css/variables.css",
+    "index.html",
+    "js/app.js",
+    "js/countdown.js",
+    "js/hero.js",
+    "js/particles.js",
+    "js/scroll.js",
+    "js/speedometer.js",
+    "js/timeline.js",
+    "js/utils.js",
+    "package.json",
+    "vite.config.js"
+  ],
+  "missing_html_references": [],
+  "javascript_basic_checks": {
+    "app.js": {
+      "parentheses": true,
+      "braces": true,
+      "brackets": true
+    },
+    "countdown.js": {
+      "parentheses": true,
+      "braces": true,
+      "brackets": true
+    },
+    "hero.js": {
+      "parentheses": true,
+      "braces": true,
+      "brackets": true
+    },
+    "particles.js": {
+      "parentheses": true,
+      "braces": true,
+      "brackets": true
+    },
+    "scroll.js": {
+      "parentheses": true,
+      "braces": true,
+      "brackets": true
+    },
+    "speedometer.js": {
+      "parentheses": true,
+      "braces": true,
+      "brackets": true
+    },
+    "timeline.js": {
+      "parentheses": true,
+      "braces": true,
+      "brackets": true
+    },
+    "utils.js": {
+      "parentheses": true,
+      "braces": true,
+      "brackets": true
+    }
+  }
+}
