@@ -60,7 +60,7 @@
 
   <div class="site">
     <main id="main-content">
-      <section
+     <section
   id="hero"
   class="hero-poster"
   aria-labelledby="hero-title"
@@ -72,13 +72,20 @@
 
   <picture class="hero-poster__media">
     <source
-      srcset="assets/images/hero-hugo-garces.png"
+      media="(max-width: 768px)"
+      srcset="assets/images/hero-mobile.webp"
+      type="image/webp"
+    >
+
+    <source
+      media="(min-width: 769px)"
+      srcset="assets/images/hero-desktop.webp"
       type="image/webp"
     >
 
     <img
       class="hero-poster__image"
-      src="assets/images/hero-hugo-garces.png"
+      src="assets/images/hero-desktop.webp"
       alt=""
       width="1536"
       height="1024"
