@@ -60,33 +60,42 @@
 
   <div class="site">
     <main id="main-content">
-      <section id="hero" aria-labelledby="hero-title">
-        <div class="racing-line racing-line--top" aria-hidden="true"></div>
-        <img class="hero-car" src="assets/svg/car.svg" alt="" aria-hidden="true">
+      <section
+  id="hero"
+  class="hero-poster"
+  aria-labelledby="hero-title"
+>
+  <h1 id="hero-title" class="sr-only">
+    Celebramos los 50 años de Hugo Garcés:
+    50 vueltas alrededor del sol
+  </h1>
 
-        <div class="hero-content" data-parallax="0.08">
-          <p class="hero-eyebrow">Celebramos los 50 años de</p>
-          <h1 id="hero-title" class="hero-title text-shine">Hugo Garcés</h1>
-          <p class="hero-subtitle">50 vueltas alrededor del sol</p>
+  <picture class="hero-poster__media">
+    <source
+      srcset="assets/images/hero-hugo-garces.webp"
+      type="image/webp"
+    >
 
-          <div class="hero-actions">
-            <a class="btn btn-primary glow-pulse" href="#rsvp" data-scroll="#rsvp">
-              Confirmar asistencia
-            </a>
-            <a class="btn btn-secondary" href="#event" data-scroll="#event">
-              Conocer el evento
-            </a>
-          </div>
-        </div>
+    <img
+      class="hero-poster__image"
+      src="assets/images/hero-hugo-garces.webp"
+      alt=""
+      width="1536"
+      height="1024"
+      fetchpriority="high"
+    >
+  </picture>
 
-        <div class="hero-scroll" aria-hidden="true">
-          <span>Scroll</span>
-          <i></i>
-        </div>
-
-        <div class="racing-line racing-line--bottom" aria-hidden="true"></div>
-      </section>
-
+  <a
+    class="hero-poster__continue"
+    href="#countdown"
+    data-scroll="#countdown"
+    aria-label="Continuar con la invitación"
+  >
+    <span>Descubre la invitación</span>
+    <span aria-hidden="true">↓</span>
+  </a>
+</section>
       <section id="countdown" aria-labelledby="countdown-title">
         <div class="countdown-content container">
           <header class="countdown-header reveal">
